@@ -112,6 +112,30 @@ class _DesktopHomePageState extends State<DesktopHomePage>
         },
       ),
       buildPluginEntry(),
+      InkWell(
+        onTap: () async {
+          final Uri url = Uri.parse('https://xf.yuz.ccwu.cc');
+          await launchUrl(url, mode: LaunchMode.externalApplication);
+        },
+        child: Container(
+          margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+          padding: const EdgeInsets.symmetric(vertical: 10),
+          decoration: BoxDecoration(
+            color: Colors.blueAccent,
+            borderRadius: BorderRadius.circular(8),
+          ),
+          child: Center(
+            child: Text(
+              "账号续费",
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 14,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+        ),
+      ),      
     ];
     if (isIncomingOnly) {
       children.addAll([
