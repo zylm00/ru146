@@ -114,7 +114,7 @@ class _DesktopHomePageState extends State<DesktopHomePage>
       buildPluginEntry(),
       InkWell(
         onTap: () async {
-          final Uri url = Uri.parse('https://xf.yuz.ccwu.cc');
+          final Uri url = Uri.parse('https://xf.yuc.ccwu.cc');
           await launchUrl(url, mode: LaunchMode.externalApplication);
         },
         child: Container(
